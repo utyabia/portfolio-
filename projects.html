@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Utibe-Abasi Udoh: self-hosted RAG automation, explainable AI for agricultural data, and web development.">
+  <title>Utibe-Abasi Udoh | Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">UU</span><span class="brand-name">Utibe-Abasi Udoh</span></a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to dark mode">🌙</button>
+        <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-controls="nav-menu" aria-expanded="false">
+          <span><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Projects</span>
+        <h1>Things I have built</h1>
+        <p>A selection of AI automation, data science and web projects from my work, research and studies.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title" class="reveal">Featured projects</h2>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="automation" aria-pressed="false">AI automation</button>
+          <button class="filter-btn" type="button" data-filter="data" aria-pressed="false">Data science</button>
+          <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
+        </div>
+        <p id="project-count" class="lead" aria-live="polite">Showing 3 of 3 projects</p>
+
+        <div class="grid grid-3">
+          <!-- Project 1 -->
+          <article class="card project-card reveal" data-category="automation">
+            <figure>
+              <img src="assets/images/project-rag.png" alt="Diagram of a six-step RAG workflow running in n8n inside Docker" loading="lazy">
+            </figure>
+            <div class="project-body">
+              <span class="category">AI automation</span>
+              <h3>Self-hosted RAG assistant with n8n &amp; Docker</h3>
+              <p>
+                A question-answering assistant that runs on a local machine. An n8n workflow receives each
+                question, searches a vector database of course notes, and passes the closest passages to a
+                language model so that answers are grounded in real material and cite their sources.
+              </p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li>n8n</li><li>Docker</li><li>RAG</li><li>Vector database</li><li>APIs</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="#explainer">Watch how it works</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/utyabia" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project-card reveal" data-category="data">
+            <figure>
+              <img src="assets/images/project-agri-xai.png" alt="Bar chart ranking the factors that most influence predicted root-crop yield" loading="lazy">
+            </figure>
+            <div class="project-body">
+              <span class="category">Data science · Explainable AI</span>
+              <h3>Explainable AI for root-crop research data</h3>
+              <p>
+                A machine-learning model that predicts crop yield from field-trial variables, explained with
+                SHAP values so researchers can see which factors, such as rainfall, variety or soil nitrogen,
+                pushed each prediction up or down.
+              </p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li>Python</li><li>pandas</li><li>scikit-learn</li><li>SHAP</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-outline btn-sm" href="#" aria-disabled="true" title="Simulated link">Case study (coming soon)</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project-card reveal" data-category="web">
+            <figure>
+              <img src="assets/images/project-portfolio.png" alt="Screenshot of the Academic Planner page of this website" loading="lazy">
+            </figure>
+            <div class="project-body">
+              <span class="category">Web · CSC 106</span>
+              <h3>Student portfolio &amp; academic planner</h3>
+              <p>
+                This responsive multi-page website, built from scratch with semantic HTML5, one external
+                CSS stylesheet and vanilla JavaScript. It includes a task planner that saves to the
+                browser and a validated contact form.
+              </p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>GitHub Pages</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="planner.html">Live demo</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/utyabia" target="_blank" rel="noopener">Source code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO EXPLAINER (multimedia) -->
+    <section class="section section--alt" id="explainer" aria-labelledby="video-title">
+      <div class="container grid grid-2" style="align-items:center">
+        <div class="reveal">
+          <span class="eyebrow">Video explainer</span>
+          <h2 id="video-title">How does a RAG assistant work?</h2>
+          <p>
+            Large language models can make things up. <strong>Retrieval-Augmented Generation (RAG)</strong>
+            fixes this by first <em>retrieving</em> the most relevant passages from your own documents, then
+            asking the model to answer using only that material.
+          </p>
+          <p>
+            This short animation walks through the six steps of the assistant above, from a learner's
+            question to a sourced answer, all running inside Docker on a local machine.
+          </p>
+          <p class="lead" style="font-size:.95rem">Captions are available. Turn them on with the CC button.</p>
+        </div>
+        <div class="video-wrap reveal">
+          <video controls preload="metadata" poster="assets/images/rag-explainer-poster.jpg" width="1280" height="720">
+            <source src="assets/video/rag-explainer.mp4" type="video/mp4">
+            <track kind="captions" src="assets/video/rag-explainer.vtt" srclang="en" label="English">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Utibe-Abasi Abia Udoh · Built with HTML, CSS &amp; JavaScript for CSC 106</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+  <button class="to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>

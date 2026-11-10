@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Utibe-Abasi Abia Udoh: data scientist in training, Lead Trainer at Fabulous Data School and agricultural researcher at NRCRI.">
+  <title>Utibe-Abasi Udoh | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">UU</span><span class="brand-name">Utibe-Abasi Udoh</span></a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to dark mode">🌙</button>
+        <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-controls="nav-menu" aria-expanded="false">
+          <span><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO: name, photo, welcome message, brief biography -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div>
+          <p class="greeting fade-in">Welcome to my portfolio 👋</p>
+          <h1 id="hero-title" class="fade-in">Hi, I'm <span>Utibe-Abasi Udoh</span></h1>
+          <p class="typed-line fade-in" aria-live="polite"><span class="typed-text"></span><span class="caret" aria-hidden="true"></span></p>
+          <p class="bio fade-in">
+            I am a Data Scientist in Training currently pursuing my B.Sc. in Data Science at Miva Open
+            University, as well as an Agricultural Researcher at the National Root Crops Research Institute
+            (NRCRI). As the Lead Trainer at Fabulous Data School, my focus is on practical data science,
+            analytics, explainable AI, and self-hosted AI automation.
+          </p>
+          <div class="hero-cta fade-in">
+            <a class="btn btn-primary" href="projects.html">View my projects →</a>
+            <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/images/profile.jpg" data-fallback="assets/images/profile-placeholder.svg"
+               alt="Portrait photograph of Utibe-Abasi Udoh" width="340" height="340">
+          <div class="status-pill"><span class="live-dot"></span> Lead Trainer · Fabulous Data School</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK STATS -->
+    <section class="container" aria-label="Quick facts">
+      <div class="stats">
+        <div class="stat reveal"><strong data-count="3">0</strong><span>Featured projects</span></div>
+        <div class="stat reveal"><strong data-count="4">0</strong><span>Core competencies</span></div>
+        <div class="stat reveal"><strong data-count="3">0</strong><span>Roles: researcher, trainer, student</span></div>
+        <div class="stat reveal"><strong data-count="2025">0</strong><span>Mr. Algorithm, Data Science Nigeria</span></div>
+      </div>
+    </section>
+
+    <!-- AUDIO INTRODUCTION (multimedia) -->
+    <section class="section" aria-labelledby="audio-title">
+      <div class="container">
+        <div class="audio-card reveal">
+          <div class="audio-icon" aria-hidden="true">🎙️</div>
+          <div>
+            <span class="eyebrow">Hear it from me</span>
+            <h2 id="audio-title">My 60-second introduction</h2>
+            <div class="wave" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <audio id="intro-audio" controls preload="metadata">
+              <source src="assets/audio/intro.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <p class="audio-note">Prefer to listen? Press play for a short voice introduction.</p>
+            <details class="transcript">
+              <summary>Read the transcript</summary>
+              <p>
+                Hello and welcome! My name is Utibe-Abasi Udoh. I am an agricultural researcher at the
+                National Root Crops Research Institute in Umudike, the Lead Trainer at Fabulous Data School,
+                and a Data Scientist in training pursuing my B.Sc. in Data Science at Miva Open University.
+                My work centers on practical data science—ranging from data analysis and explainable AI
+                models to building AI automation workflows and RAG systems using n8n and Docker. Thank you
+                for visiting my portfolio site!
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section class="section section--alt" aria-labelledby="focus-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What I work on</span>
+          <h2 id="focus-title">Practical data science, from analysis to automation</h2>
+          <p class="lead">Three areas run through my research, my teaching and my own projects.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">📊</div>
+            <h3>Data science &amp; analytics</h3>
+            <p>Cleaning, analysing and visualising data with Python, SQL and Power BI to answer real questions.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">🧠</div>
+            <h3>Explainable AI</h3>
+            <p>Machine-learning models that show <em>why</em> they made a prediction, applied to agricultural research data.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">🤖</div>
+            <h3>Self-hosted AI automation</h3>
+            <p>n8n workflows, Docker, agentic AI and Retrieval-Augmented Generation (RAG) systems that run locally.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2>Stay on top of your semester</h2>
+            <p>Try the interactive academic planner I built for managing coursework, training and research tasks.</p>
+          </div>
+          <a class="btn btn-primary" href="planner.html">Open the planner</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Utibe-Abasi Abia Udoh · Built with HTML, CSS &amp; JavaScript for CSC 106</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+  <button class="to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

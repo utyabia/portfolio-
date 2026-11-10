@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Utibe-Abasi Udoh.">
+  <title>Utibe-Abasi Udoh | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">UU</span><span class="brand-name">Utibe-Abasi Udoh</span></a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to dark mode">🌙</button>
+        <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-controls="nav-menu" aria-expanded="false">
+          <span><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1>Let's talk</h1>
+        <p>Interested in a bootcamp, a workshop, a data or AI automation project, or feedback on this site? Send me a message.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <!-- CONTACT DETAILS -->
+        <aside class="reveal" aria-labelledby="details-title">
+          <h2 id="details-title" style="font-size:1.4rem">Contact details</h2>
+          <address style="font-style:normal">
+            <ul class="contact-list">
+              <li><span class="icon" aria-hidden="true">📍</span>
+                <div><strong>Location</strong><br>Nigeria</div></li>
+              <li><span class="icon" aria-hidden="true">✉️</span>
+                <div><strong>Email</strong><br><a href="mailto:fabulousdataschool@gmail.com">fabulousdataschool@gmail.com</a></div></li>
+              <li><span class="icon" aria-hidden="true">🏫</span>
+                <div><strong>Organisation</strong><br>Fabulous Data School · NRCRI, Umudike</div></li>
+              <li><span class="icon" aria-hidden="true">🔗</span>
+                <div><strong>Online</strong><br>
+                  <a href="https://www.linkedin.com/in/utibeabasiabia/" target="_blank" rel="noopener">LinkedIn</a> ·
+                  <a href="https://github.com/utyabia" target="_blank" rel="noopener">GitHub</a></div></li>
+            </ul>
+          </address>
+          <div class="map-wrap">
+            <iframe title="Map of Nigeria" loading="lazy"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=2.5%2C4.0%2C14.8%2C14.0&amp;layer=mapnik"></iframe>
+          </div>
+        </aside>
+
+        <!-- CONTACT FORM -->
+        <div class="card reveal">
+          <h2 style="font-size:1.4rem">Send a message</h2>
+          <div class="form-success" id="form-success" role="status">
+            <strong>Thank you!</strong>
+            <p style="margin:.3rem 0 0">Your message passed validation and has been received. I will reply within 2–3 working days.</p>
+          </div>
+
+          <!-- novalidate turns off the browser's built-in checks so our JavaScript validation runs instead -->
+          <form id="contact-form" novalidate>
+            <div class="form-split">
+              <div class="form-row">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Ada Okon">
+                <span class="field-error" id="name-error" aria-live="polite"></span>
+              </div>
+              <div class="form-row">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="name@example.com">
+                <span class="field-error" id="email-error" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone number <small>(digits only)</small></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="numeric" placeholder="e.g. 08012345678">
+              <span class="field-error" id="phone-error" aria-live="polite"></span>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" maxlength="500" placeholder="How can I help?"></textarea>
+              <div style="display:flex;justify-content:space-between;gap:1rem">
+                <span class="field-error" id="message-error" aria-live="polite"></span>
+                <span class="char-count" id="char-count">0 / 500</span>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Send message ✈</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Utibe-Abasi Abia Udoh · Built with HTML, CSS &amp; JavaScript for CSC 106</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+  <button class="to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
