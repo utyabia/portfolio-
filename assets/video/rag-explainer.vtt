@@ -1,0 +1,20 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.500
+A learner types a question, e.g. "How do I join two tables in SQL?"
+
+00:00:02.500 --> 00:00:05.000
+A self-hosted n8n workflow catches the question through a webhook.
+
+00:00:05.000 --> 00:00:07.500
+An embedding model turns the question into a list of numbers (a vector).
+
+00:00:07.500 --> 00:00:10.000
+The vector database returns the course notes whose meaning is closest.
+
+00:00:10.000 --> 00:00:12.500
+Those notes are added to the prompt, so the LLM answers from real material.
+
+00:00:12.500 --> 00:00:16.000
+The answer comes back grounded in the documents, with its sources cited.
+
